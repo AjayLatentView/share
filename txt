@@ -22,3 +22,21 @@ having month(transaction_date)=%s"""
 mycursor.execute(query,(month_,))
 for i in mycursor.fetchall():
     print(i)
+
+
+month_ = 4
+
+query = """
+SELECT wk, MAX(transaction_amount)
+FROM (
+    SELECT WEEK(transaction_date) AS wk, transaction_amount
+    FROM finance
+) AS subquery
+GROUP BY wk
+HAVING EXTRACT(MONTH FROM MAX(transaction_date)) = %s
+"""
+
+mycursor.execute(query, (month_,))
+
+for row in mycursor.fetchall():
+    print(row)
