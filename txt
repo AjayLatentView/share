@@ -1,0 +1,12 @@
+INSERT INTO finance (transaction_id, transaction_company, transaction_date, transaction_details, transaction_type, transaction_currency, transaction_amount, created_date, create_user, updated_date, updated_user)
+VALUES
+(1, 'Company A', '2024-01-01', 'Sale', 'Credit', 'USD', 1000, '2024-01-01', 'UserA', '2024-01-01', 'UserA'),
+(2, 'Company B', '2024-01-02', 'Purchase', 'Debit', 'EUR', 1500, '2024-01-02', 'UserB', '2024-01-02', 'UserB'),
+(3, 'Company C', '2024-01-03', 'Expense', 'Debit', 'USD', 500, '2024-01-03', 'UserC', '2024-01-03', 'UserC'),
+(4, 'Company D', '2024-01-04', 'Salary', 'Credit', 'EUR', 2000, '2024-01-04', 'UserD', '2024-01-04', 'UserD'),
+(5, 'Company E', '2024-01-05', 'Investment', 'Credit', 'USD', 3000, '2024-01-05', 'UserE', '2024-01-05', 'UserE'),
+(6, 'Company F', '2024-01-06', 'Purchase', 'Debit', 'EUR', 800, '2024-01-06', 'UserF', '2024-01-06', 'UserF'),
+(7, 'Company G', '2024-01-07', 'Sale', 'Credit', 'USD', 1200, '2024-01-07', 'UserG', '2024-01-07', 'UserG'),
+(8, 'Company H', '2024-01-08', 'Expense', 'Debit', 'EUR', 700, '2024-01-08', 'UserH', '2024-01-08', 'UserH'),
+(9, 'Company I', '2024-01-09', 'Salary', 'Credit', 'USD', 1800, '2024-01-09', 'UserI', '2024-01-09', 'UserI'),
+(10, 'Company J', '2024-01-10', 'Investment', 'Credit', 'EUR', 2500, '2024-01-10', 'UserJ', '2024-01-10', 'UserJ');
