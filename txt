@@ -38,11 +38,79 @@ HAVING EXTRACT(MONTH FROM MAX(transaction_date)) = %s
 
 
 
+
+import streamlit as st
+import pandas as pd
+from PIL import Image
+
+def clear():
+    st.session_state.a=""
+    st.session_state["b"]=""
+    st.session_state["c"]=""
+
 def center(imagepath):
-    c_image='''<img src={imagepath} alt="Unavailable">'''
+    c_image='''<div><img src={imagepath} alt="Unavailable"></div>'''
     st.markdown(c_image,unsafe_allow_html=True)
+
+
+img = Image.open("latentview.png")
+
+hidden='''
+<style>
+    #MainMenu {visibility:hidden;}
+    header {visibility:hidden;}
+    footer {visibility:hidden;}
+</style>
+'''
+st.markdown(hidden, unsafe_allow_html=True)
+
 with st.container():
     st.image(img, width=600)
     center('latentview.png')
     st.header("Latentview")
     st.subheader("Chennai")
+    
+with st.container():
+    st.write("---")
+    mod=st.selectbox("Model:",["Classification","regression","cluster"])
+    if st.button("submit"):
+        st.markdown(f"*You* **selected** :red[{mod}]")
+
+
+
+# dic={"col:":[1,2,3,4,5],
+#      "Alp:":["a","b","c","d","e"]}
+
+# df=pd.DataFrame(dic)
+
+# st.dataframe(df)
+
+
+with st.container():
+    st.write("---")
+    a=st.text_input("Name",key="a")
+    b=st.text_input("Age",key="b")
+    c=st.text_input("Mobile no",key="c")
+
+    # if st.button("show var"):
+    #     st.success(a)
+    st.button("clear",on_click=clear)
+
+with st.container():
+    st.write("---")
+    st.title("Contact")
+    href = """
+    <form action="https://formsubmit.co/ajayajay2001.09@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email"required>
+        <button type="submit">Send</button>
+    </form>
+    """
+
+    st.markdown(href, unsafe_allow_html=True)
+
+
+st.sidebar.write("sidebar")
+
+
