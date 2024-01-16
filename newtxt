@@ -53,3 +53,15 @@ with st.container():
     st.markdown(href, unsafe_allow_html=True)
 
 st.sidebar.write("sidebar")
+
+
+
+col=['total_rooms','total_bedrooms', 'households', 'median_income', 'ocean_proximity', 'median_house_value']
+for i in col:
+    q1=df[str(i)].quantile(0.25)
+    q3=df[str(i)].quantile(0.75)
+
+    iqr=q3-q1
+
+    df=df[(df[i]>q1-(1.5*iqr)) & (df[i]<q3+(1.5*iqr))]
+df.shape
