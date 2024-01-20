@@ -1,3 +1,32 @@
+-- Create the table
+CREATE TABLE customer_data (
+    state VARCHAR(2),
+    account_length INT,
+    area_code INT,
+    phone_number VARCHAR(10),
+    international_plan VARCHAR(3),
+    voice_mail_plan VARCHAR(3),
+    number_vmail_messages INT,
+    total_day_minutes DECIMAL(5, 1),
+    total_day_calls INT,
+    total_day_charge DECIMAL(5, 2),
+    total_eve_minutes DECIMAL(5, 1),
+    total_eve_calls INT,
+    total_eve_charge DECIMAL(5, 2),
+    total_night_minutes DECIMAL(5, 1),
+    total_night_calls INT,
+    total_night_charge DECIMAL(5, 2),
+    total_intl_minutes DECIMAL(5, 1),
+    total_intl_calls INT,
+    total_intl_charge DECIMAL(5, 2),
+    customer_service_calls INT,
+    churn VARCHAR(5)
+);
+
+-- Insert example values
+INSERT INTO customer_data VALUES ('KS', 128, 415, '382-4657', 'no', 'yes', 25, 265.1, 110, 45.07, 197.4, 99, 16.78, 244.7, 91, 11.01, 10, 3, 2.7, 1, 'FALSE');
+
+
 INSERT INTO finance (transaction_id, transaction_company, transaction_date, transaction_details, transaction_type, transaction_currency, transaction_amount, created_date, create_user, updated_date, updated_user)
 VALUES
 (1, 'Company A', '2024-01-01', 'Sale', 'Credit', 'USD', 1000, '2024-01-01', 'UserA', '2024-01-01', 'UserA'),
