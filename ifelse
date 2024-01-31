@@ -1,0 +1,19 @@
+def helper(df,cols):
+  if df[cols[1]]>6.5 and df[cols[2]]>200 and df[cols[3]]>30:
+    return 1
+  elif df[cols[1]]>6.5 and df[cols[2]]>200 and df[cols[3]]<30 and df[cols[3]]>25:
+    return 2
+  elif df[cols[1]]>6.5 and df[cols[2]]<200 and df[cols[2]]>140 and df[cols[3]]>25:
+    return 3
+  elif df[cols[1]]>6.5 and df[cols[2]]<200 and df[cols[2]]>140 and df[cols[3]]<30 and df[cols[3]]>25]:
+    return 4
+  elif df[cols[1]]<6.5 and df[cols[1]]>5.7 and df[cols[2]]>200 and df[cols[3]]>30:
+    return 5
+  elif df[cols[1]]<6.5 and df[cols[1]]>5.7 and df[cols[2]]>200 and df[cols[3]]<30 and df[cols[3]]>25:
+    return 6
+  elif df[cols[1]]<6.5 and df[cols[1]]>5.7 and df[cols[2]]<200 and df[cols[2]]>140 and df[cols[3]]>25:
+    return 7
+  elif df[cols[1]]<6.5 and df[cols[1]]>5.7 and df[cols[2]]<200 and df[cols[2]]>140 and df[cols[2]]>140 and df[cols[3]]>25:
+    return 8
+  elif df[cols[1]]<5.7 and df[cols[2]]<200 and df[cols[2]]>140 and df[cols[2]]>140 and df[cols[3]]>25:
+    return 8
