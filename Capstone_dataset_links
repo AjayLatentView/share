@@ -5,3 +5,29 @@ https://www.kaggle.com/code/gautamrmenon/sklearn-multimodel-classification/input
 https://github.com/chayandatta/Heart_disease_prediction/blob/master/heart.csv
 
 https://github.com/topics/disease-prediction
+
+
+Non-Linearity in Data:
+
+When to use SVC: SVC is particularly useful when the relationship between features and the target variable is non-linear. SVMs can efficiently handle non-linear decision boundaries by using kernel functions (e.g., polynomial, radial basis function - RBF).
+When to consider other models: Linear models like Logistic Regression or Linear SVM may be more suitable for linearly separable data.
+Complex Decision Boundaries:
+
+When to use SVC: If your data has complex decision boundaries, and you want a model that can capture intricate relationships between features, SVC with non-linear kernels can be a good choice.
+When to consider other models: For simpler decision boundaries, models like Logistic Regression or Naive Bayes might be sufficient and computationally less expensive.
+High-Dimensional Data:
+
+When to use SVC: SVMs, including SVC, can perform well in high-dimensional spaces. They are less prone to overfitting in high-dimensional spaces compared to some other models.
+When to consider other models: For high-dimensional data, ensemble methods like Random Forest or Gradient Boosting may also be effective.
+Small to Medium-sized Datasets:
+
+When to use SVC: SVC can work well on smaller to medium-sized datasets. It is known for its efficiency in handling moderate-sized datasets.
+When to consider other models: For very large datasets, models like Stochastic Gradient Descent (SGD) Classifier or ensemble methods might be preferred due to their faster training times.
+Tuning Complexity:
+
+When to use SVC: If you are comfortable fine-tuning hyperparameters and want control over the model's complexity, SVC allows for tuning parameters like the choice of kernel and regularization.
+When to consider other models: If you prefer a simpler model with fewer hyperparameters, models like Decision Trees or Naive Bayes might be more straightforward.
+Interpretability:
+
+When to use SVC: SVMs might be less interpretable compared to linear models, but if interpretability is not a primary concern and you prioritize predictive performance, SVC can be a good choice.
+When to consider other models: Linear models like Logistic Regression are generally more interpretable.
