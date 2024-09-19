@@ -1,0 +1,66 @@
+Problem 1: Enhancing Demand Forecasting Accuracy: Optimising Inventory in a Complex Retail Environment
+Problem Overview:
+A major retail chain faces significant challenges in accurately forecasting demand for its products across various store locations. Seasonal fluctuations, changing consumer preferences, promotional activities, and external factors like economic conditions or supply chain disruptions make it difficult to predict demand accurately. Incorrect forecasts can lead to overstocking, resulting in increased holding costs and waste, or understocking, leading to missed sales opportunities and decreased customer satisfaction.
+The retail chain currently relies on traditional time series forecasting methods that struggle to account for the complexity and variability of modern retail environments. A more advanced, data-driven approach is required to improve the accuracy of demand forecasts, enabling the company to optimise inventory management, reduce costs, and enhance customer satisfaction.
+Business Impact:
+●
+Optimised Inventory Management: Improved demand forecasting will allow the retailer to maintain optimal inventory levels, reducing overstock and understock situations. This will lead to lower holding costs, reduced waste, and higher sales.
+●
+Increased Revenue: By ensuring that popular items are always in stock, the retailer can capitalise on sales opportunities, boosting overall revenue.
+●
+Enhanced Customer Satisfaction: Accurate demand forecasts will ensure that customers can find the products they want when they want them, leading to better customer experiences and increased loyalty.
+●
+Reduced Operational Costs: By minimising overstock, the retailer can reduce storage and handling costs, contributing to overall cost savings.
+Current Solutions and Limitations:
+●
+Current Solutions: The retailer currently uses basic statistical models like moving averages, ARIMA, and exponential smoothing to forecast demand. These models primarily rely on historical sales data and are applied uniformly across all store locations.
+●
+Limitations:
+○
+Lack of Granularity: Current models do not account for differences in demand patterns across regions, store sizes, or customer demographics, leading to generalised forecasts that may not be accurate for specific locations.
+○
+Inability to Handle External Factors: Traditional methods struggle to incorporate external factors such as weather patterns, economic indicators, or competitor activities, which can significantly influence demand.
+○
+Inflexibility: The models are not adaptive and cannot easily accommodate rapid changes in consumer behaviour or unexpected events, resulting in outdated forecasts.
+○
+Limited Integration with Other Systems: The existing forecasting process is siloed and not integrated with other key systems such as supply chain management or promotional planning, leading to inefficiencies and missed opportunities.
+Solution Scope
+●
+Advanced Machine Learning Models: Implement machine learning models, such as gradient boosting machines (GBMs), random forests, or deep learning models, to forecast demand at a granular level. These models can incorporate a wide range of features, including historical sales, promotional schedules, external data (weather, economic indicators), and customer demographics.
+●
+Real-Time Forecasting: Develop a system that allows for real-time demand forecasting, updating predictions as new data becomes available. This would enable the retailer to quickly respond to changes in demand and adjust inventory levels accordingly.
+●
+Integration with Supply Chain and Promotions: Integrate demand forecasting with supply chain management and promotional planning systems to ensure that inventory levels align with forecasted demand and planned marketing activities.
+●
+Scenario Analysis and Forecasting: Include capabilities for scenario analysis, allowing the retailer to simulate the impact of various factors (e.g., a new competitor entering the market, a sudden economic downturn) on demand and prepare accordingly.
+Scalability
+●
+Cloud-Based Deployment: Utilize cloud platforms to ensure that the solution can scale with the retailer's growth, accommodating increased data volumes and additional store locations as needed.
+●
+Automated Model Training and Deployment: Implement automated model training and deployment pipelines to ensure that the demand forecasting models are continuously updated with the latest data and can scale across different regions and product categories.
+© 2024 LatentView Analytics - Consulting - Confidential & Proprietary
+●
+Multi-Location Support: Design the solution to be applicable across all store locations, with the ability to tailor forecasts to the specific characteristics of each store (e.g., urban vs. rural, large vs. small format).
+Out of Scope
+●
+Supply Chain Optimization: While the solution will integrate with supply chain systems, it will not focus on optimising supply chain processes themselves (e.g., logistics, supplier management).
+●
+In-Store Inventory Management: The solution will provide demand forecasts but will not include detailed in-store inventory management functions (e.g., shelf replenishment, in-store merchandising).
+●
+Marketing Strategy Development: The solution will not involve creating new marketing strategies but will focus on integrating existing promotional plans into the demand forecasting process.
+Constraints
+●
+Budget: The solution must be developed within the budget of ~$0.75M that covers the cost of data acquisition, cloud infrastructure, machine learning model development, and integration with existing systems.
+●
+Technology Stack: The solution should be built using technologies that are compatible with the retailer’s current IT infrastructure to minimise integration challenges and costs.
+●
+Data Privacy and Security: The solution must comply with data privacy regulations (e.g., GDPR) and ensure that all customer data used in forecasting is securely stored and processed.
+Desired Outcomes
+●
+Improved Forecast Accuracy: Achieve a significant improvement in demand forecast accuracy, leading to better alignment of inventory with actual demand and reducing instances of overstock and understock.
+●
+Higher Revenue: Increase sales by ensuring that high-demand products are consistently available in stores, leading to fewer missed sales opportunities.
+●
+Cost Reduction: Lower operational costs by reducing the need for emergency shipments, minimising holding costs, and reducing waste from unsold inventory.
+●
+Enhanced Customer Satisfaction: Improve customer satisfaction and loyalty by ensuring that customers can reliably find the products they want, even during peak seasons or promotional periods.
