@@ -5,7 +5,7 @@ CREATE TABLE customer_data (
     area_code INT,
     phone_number VARCHAR(10),
     international_plan VARCHAR(3),
-    voice_mail_plan VARCHAR(3),
+    voice_mail_plan VARCHAR(3),   
     number_vmail_messages INT,
     total_day_minutes DECIMAL(5, 1),
     total_day_calls INT,
